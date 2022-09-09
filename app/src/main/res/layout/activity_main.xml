@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOLA! Puedo ayudarte?"
+        android:text="Hola, puedo ayudarte?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
@@ -32,8 +32,9 @@
                 android:layout_height="40dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/ic_launcher_background"
-                app:shapeAppearanceOverlay="@style/circleView"
                 tools:ignore="ImageContrastCheck" />
+
+            <!--               app:shapeAppearanceOverlay="@style/circleView"-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="80dp"
-        app:layout_constrainRight_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/frame"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:ignore="SpeakableTextPresentCheck">
@@ -83,7 +84,8 @@
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:minHeight="48dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -94,6 +96,7 @@
                 android:background="@android:color/transparent"
                 app:boxStrokeColor="#878787"
                 android:maxLines="6">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edittext_chatbox"
                     android:layout_width="match_parent"
